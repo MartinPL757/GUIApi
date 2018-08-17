@@ -1,0 +1,5 @@
+name: GUIApi
+version: 1.0
+main: gui.api.Main
+author: MartinPL
+website: 
