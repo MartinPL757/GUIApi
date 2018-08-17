@@ -19,12 +19,12 @@ public class Main extends JavaPlugin implements Listener {
 	
 	@Override
 	public void onDisable() {
-		System.out.println("Wylaczanie..");
+		System.out.println("[GUIApi] Is disabled!");
 	}
 
 	@Override
 	public void onEnable() {
-		System.out.println("Uruchamianie..");
+		System.out.println("[GUIApi] Is enabled!");
 		Bukkit.getPluginManager().registerEvents(this, this);
 	}
 	
