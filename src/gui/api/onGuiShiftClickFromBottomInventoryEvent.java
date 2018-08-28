@@ -7,7 +7,7 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-public class onGuiItemClickEvent extends Event implements Cancellable {
+public class onGuiShiftClickFromBottomInventoryEvent extends Event implements Cancellable {
 	
 	private static final HandlerList handlers = new HandlerList();
 	private boolean cancelled;
@@ -26,7 +26,7 @@ public class onGuiItemClickEvent extends Event implements Cancellable {
 		return cursor;
 	}
 
-	public onGuiItemClickEvent(Player p, GUI gui, ItemStack i, int slot, ItemStack cursor) {
+	public onGuiShiftClickFromBottomInventoryEvent(Player p, GUI gui, ItemStack i, int slot, ItemStack cursor) {
 		this.player = p;
 		this.gui = gui;
 		this.inv = this.gui.getInv();
